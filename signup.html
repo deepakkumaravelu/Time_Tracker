@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        h3{
+            text-align: center;
+            font-size: 40px;
+            margin-bottom: 60px;
+        }
+        .form-container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-image:linear-gradient(115deg,rgb(6, 231, 243) ,rgb(92, 51, 216));
+        }
+        form{
+            display: flex;
+            flex-direction: column;
+            padding:30px;
+            border-radius: 10px;
+           
+            background-color: rgba(255, 255, 255,0.3);
+            backdrop-filter: blur(180px);
+        }
+        form input{
+            padding: 10px;
+            width:500px;
+            margin-bottom: 40px;
+            font-size: 20px;
+            border-radius: 10px;
+        }
+        form button{
+            width:100%;
+            height: 60px;
+            padding: 10px;
+            font-size: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+        }
+        form a{
+            margin: auto;
+            padding-top: 20px;
+            font-size: 22px;
+            color: #ffffffb2;
+            text-decoration: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form action="">
+            <h3>Sign Up</h3>
+            <input type="text" placeholder="Enter name" id="name">
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="password" placeholder="Enter password" id="password">
+            <button type="submit">Login</button>
+            <a href="./index.html">Already have an account</a>
+        </form>
+    </div>
+</body>
+</html>
+
+

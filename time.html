@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Time tracker</title>
+    <style>
+      #taskTable {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-collapse: collapse;
+        table-layout: fixed;
+      }
+      th,
+      td {
+        text-align: center;
+        padding: 2px;
+        border: 1px solid #dddddd;
+      }
+      .outer {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .formtask{
+        margin: 10px;
+      }
+      .update{
+       color: aliceblue;
+       background-color: green;
+      }
+      .delete{
+       color: aliceblue;
+       background-color: red;
+      }
+      button{
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+      input{
+        border-radius: 5px;
+        border: none;
+      }
+      input:focus{
+        outline: none;
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <h1>Time Tracker</h1>
+      <form id="filterForm">
+        <label for="category">Category:</label>
+        <select id="category">
+          <option value="">All</option>
+          <option value="work">Work</option>
+          <option value="personal work">Personal</option>
+        </select>
+        <button type="submit">Apply Filters</button>
+      </form>
+    </center>
+    <div class="outer">
+      <table id="taskTable">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th>Sub Category</th>
+            <th>Duration</th>
+            <th>task</th>
+            <th>update</th>
+            <th>delete</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <div class="formtask">
+        <h2>Start a new task</h2>
+        <form>
+          <table>
+            <tr>
+              <td>
+                <select id="selectcat">
+                  <option>Select category</option>
+                  <option value="work">Work</option>
+                  <option value="personal work">Personal</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input
+                  type="text"
+                  id="sub_category"
+                  placeholder="Sub-Category"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <input type="text" id="task" placeholder="Task" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="whole">
+                <h1 id="n">STOP WATCH</h1>
+                <p>00:00:00</p>
+                <div>
+                <button id="stop">start</button>
+                <button id="reset" type="button">reset</button>
+                </div>
+            </div></td>
+            </tr>
+            <tr>
+              <td>
+                <button id="addtask" type="submit">Add task</button>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <button id="updatetask" type="button">update task</button>
+              </td>
+            </tr>
+          </table>
+        </form>
+
+    </div>
+    <script src="time.js"></script>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+}
+h3{
+    font-size: 50px;
+}
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0; 
+}
+
+form {
+    text-align: center; 
+    padding: 20px; 
+    border-radius: 8px; 
+    background-color: #fff; 
+}
+form input {
+    padding: 8px; 
+    margin-bottom: 20px; 
+    width: 80%; 
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+form button {
+    padding: 8px; 
+    width: 85%;
+    border-radius: 4px; 
+    border: none;
+    background-color: #898989; 
+    color: #fff;
+    cursor: pointer;
+}
+
+form a {
+    display: block; 
+    margin-top: 10px; 
+    font-size: 14px;
+    color: #2a2a2a;
+    text-decoration: none;
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="submitForm" action="">
+            <h3>Sign In</h3>
+            <input type="text" placeholder="Enter Email" id="email">
+            <input type="text" placeholder="Enter password" id="password">
+            <button type="submit">Login</button>
+            <a href="./signup.html">create new account</a>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
+
+
+
